@@ -1,0 +1,35 @@
+.ui.basic.segment.content-area {
+    padding: 0;
+    margin: 0;
+}
+
+.tile.view.mainintro {
+    height: 50vh;
+    align-items: center;
+    text-align: center;
+    padding: 15vh;
+
+    .heading {
+        color: white;
+    }
+}
+
+
+// This is the width hack
+body:not(.has-toolbar):not(.has-sidebar):not(.has-toolbar-collapsed):not(.has-sidebar-collapsed) .ui.wrapper>.full-width,
+body.has-toolbar:not(.has-sidebar):not(.has-sidebar-collapsed) .ui.wrapper>.full-width,
+body.has-toolbar-collapsed:not(.has-sidebar):not(.has-sidebar-collapsed) .ui.wrapper>.full-width {
+    position: relative;
+    right: 50%;
+    left: 50%;
+    width: 100vw !important;
+    max-width: initial !important;
+    margin-right: -50vw !important;
+    margin-left: -50vw !important;
+}
+
+
+
+.ui.secondary.segment.breadcrumbs {
+    display: none;
+}

@@ -21,6 +21,31 @@ import {
   addonRoutes as defaultAddonRoutes,
 } from '@plone/volto/config';
 
+import MainIntroViewBlock from '@package/components/Blocks/MainIntro/View';
+import MainIntroEditBlock from '@package/components/Blocks/MainIntro/Edit';
+import sliderSVG from '@plone/volto/icons/slider.svg';
+
+
+const customBlocks = {
+  mainintro: {
+    id: 'mainintro',
+    title: 'Main Intro',
+    icon: sliderSVG,
+    group: 'common',
+    view: MainIntroViewBlock,
+    edit: MainIntroEditBlock,
+    restricted: false,
+    mostUsed: true,
+    security: {
+      addPermission: [],
+      view: [],
+    },
+  },
+};
+
+defaultBlocks.blocksConfig = { ...defaultBlocks.blocksConfig, ...customBlocks };
+defaultBlocks.requiredBlocks = [];
+
 export const settings = {
   ...defaultSettings,
 };
