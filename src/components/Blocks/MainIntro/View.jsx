@@ -6,7 +6,7 @@ const View = props => {
             style={{
                 background: `black`,
             }}>
-            <h1 className="heading">I am Nimish Agrawal.</h1><h1 className="heading"> I am Computer Science Student at NIT Trichy.</h1>
+            <h1 className="heading">I am Nimish Agrawal.</h1><h1 className="heading"> I am a Student and a Developer.</h1>
             
         </div>
     );

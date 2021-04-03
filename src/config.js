@@ -23,6 +23,8 @@ import {
 
 import MainIntroViewBlock from '@package/components/Blocks/MainIntro/View';
 import MainIntroEditBlock from '@package/components/Blocks/MainIntro/Edit';
+import HighlightsViewBlock from '@package/components/Blocks/Highlights/View';
+import HighlightsEditBlock from '@package/components/Blocks/Highlights/Edit';
 import sliderSVG from '@plone/volto/icons/slider.svg';
 
 
@@ -41,6 +43,20 @@ const customBlocks = {
       view: [],
     },
   },
+  highlights: {
+    id: 'highlights',
+    title: 'Highlights',
+    icon: sliderSVG,
+    group: 'common',
+    view: HighlightsViewBlock,
+    edit: HighlightsEditBlock,
+    restricted: false,
+    mostUsed: true,
+    security: {
+      addPermission: [],
+      view: [],
+    }
+  }
 };
 
 defaultBlocks.blocksConfig = { ...defaultBlocks.blocksConfig, ...customBlocks };

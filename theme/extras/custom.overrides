@@ -1,3 +1,21 @@
+@screen-xs-min:     240px;
+@screen-sm-min:     768px;
+@screen-md-min:     992px;
+@screen-lg-min:     1250px;
+
+@screen-xs-max:     (@screen-sm-min - 1);
+@screen-sm-max:     (@screen-md-min - 1);
+@screen-md-max:     (@screen-lg-min - 1);
+
+@phone:             ~"only screen and (max-width: @{screen-xs-min})";
+@phone-strict:      ~"only screen and (min-width: @{screen-xs-min}) and (max-width: @{screen-xs-max})";
+@tablet:            ~"only screen and (min-width: @{screen-sm-min})";
+@tablet-strict:     ~"only screen and (min-width: @{screen-sm-min}) and (max-width: @{screen-sm-max})";
+@desktop:           ~"only screen and (min-width: @{screen-md-min})";
+@desktop-strict:    ~"only screen and (min-width: @{screen-md-min}) and (max-width: @{screen-md-max})";
+@large:             ~"only screen and (min-width: @{screen-lg-min})";
+
+
 .ui.basic.segment.content-area {
     padding: 0;
     margin: 0;
@@ -13,6 +31,81 @@
         color: white;
     }
 }
+
+.highlights {
+    background-color: #E3E5E7;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+
+    @media @phone-strict, @tablet-strict, @desktop-strict {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.highlight {
+    width: 25vw;
+    margin: 1vw;
+    background-color: white;
+    
+    .highlight-header {
+        background-color: #2AA8E5;
+        color: white;
+        padding: 1vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+
+    .highlight-body {
+        padding: 20px;
+        display: flex;
+    }
+
+    .projects {
+        .project {
+            .project-title {
+                text-transform: uppercase;
+            }
+            margin-bottom: 1vh;
+        }
+    }
+
+    .more-highlight {
+        text-align: right;
+        margin-top: 1vh;
+        text-decoration: underline;
+    }
+
+    @media @phone-strict, @tablet-strict {
+        width: 90vw;
+    }
+    @media @desktop-strict {
+        width: 80vw;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // This is the width hack
