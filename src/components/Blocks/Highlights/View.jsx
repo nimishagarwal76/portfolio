@@ -2,6 +2,7 @@ import React from 'react';
 import { Grid } from 'semantic-ui-react';
 import highlightAboutMePNG from './me.png';
 import Projects from './Projects';
+import Articles from './Articles';
 
 const View = props => {
   const startYear = 2018;
@@ -39,10 +40,11 @@ const View = props => {
       </div>
       <div className="highlight">
         <div className="highlight-header">
-          {/* <img src={highlightPlonePNG} alt="" /> */}
           <h2>Recent Articles</h2>
         </div>
-        <div className="highlight-body">Body here</div>
+        <div className="highlight-body">
+          <Articles id={id+1} />
+        </div>
       </div>
 
     </div>

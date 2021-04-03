@@ -58,12 +58,6 @@
                <Navigation pathname={this.props.pathname} />
              </div>
              <div className="tools-search-wrapper">
-               <LanguageSelector />
-               {!this.props.token && (
-                 <div className="tools">
-                   <Anontools />
-                 </div>
-               )}
                <div className="search">
                  <SearchWidget pathname={this.props.pathname} />
                </div>
