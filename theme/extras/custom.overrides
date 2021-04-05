@@ -250,26 +250,52 @@
 
 .footer-wrapper {
     background-color: black !important;
-.footer {
-    background-color: black !important;
-    .ui.image {
-        height: 32px;
-        margin-right: 50px;
-    }
 
-    .footer-inner {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
+    .footer {
+        background-color: black !important;
 
-        .ui.horizontal.list a {
-            text-decoration: none;
+        .ui.image {
+            height: 32px;
+            margin-right: 50px;
+        }
+
+        .footer-inner {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .ui.horizontal.list a {
+                text-decoration: none;
+            }
         }
     }
 }
+
+#page-document {
+    .documentFirstHeading {
+        margin-top: 2vh !important;
+        border: 0 !important;
+        text-transform: uppercase;
+        font-size: large;
+        background-color: #2AA8E5;
+        color: white;
+        padding: 1vh 1vw;
+        font-weight: bold;
+        // display: inline-block;
+    }
+
+    // p {
+    //     font-size: small;
+    // }
+    
+
+    .documentFirstHeading::before {
+        display: none !important;
+    }
 }
-
-
+.tags {
+    margin-top: 3vh;
+}
 
 
 // This is the width hack
