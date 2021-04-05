@@ -1,5 +1,4 @@
 import React from 'react';
-import { Grid } from 'semantic-ui-react';
 import highlightAboutMePNG from './me.png';
 import Projects from './Projects';
 import Articles from './Articles';

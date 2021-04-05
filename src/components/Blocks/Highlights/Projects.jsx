@@ -2,7 +2,7 @@ import React from 'react';
 import { searchContent } from '@plone/volto/actions';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { Divider } from 'semantic-ui-react'
+import { Divider, Icon } from 'semantic-ui-react'
 
 const Projects = props => {
     const { id } = props;
@@ -22,7 +22,7 @@ const Projects = props => {
             ),
         );
     }, [dispatch, id]);
-    console.log(results);
+
     return (
         <div className="projects">
             {results &&

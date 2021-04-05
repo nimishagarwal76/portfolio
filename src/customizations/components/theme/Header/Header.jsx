@@ -57,11 +57,11 @@
                </div>
                <Navigation pathname={this.props.pathname} />
              </div>
-             <div className="tools-search-wrapper">
+             {/* <div className="tools-search-wrapper">
                <div className="search">
                  <SearchWidget pathname={this.props.pathname} />
                </div>
-             </div>
+             </div> */}
            </div>
          </Container>
        </Segment>

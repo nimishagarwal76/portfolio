@@ -22,7 +22,7 @@ const Articles = props => {
             ),
         );
     }, [dispatch, id]);
-    console.log(results);
+
     return (
         <div className="projects">
             {results &&
