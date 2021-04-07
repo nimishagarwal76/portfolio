@@ -156,6 +156,8 @@
         .project {
             .project-title {
                 text-transform: uppercase;
+                margin-bottom: 1vh;
+
             }
 
             margin-bottom: 1vh;
@@ -271,6 +273,12 @@
     }
 }
 
+@media @phone-strict {
+    #view {
+        font-size: medium;
+    }
+}
+
 #page-document {
     .documentFirstHeading {
         margin-top: 2vh !important;
@@ -284,17 +292,15 @@
         // display: inline-block;
     }
 
-    // p {
-    //     font-size: small;
-    // }
-    
+
 
     .documentFirstHeading::before {
         display: none !important;
     }
 }
+
 .tags {
-    margin-top: 3vh;
+    margin: 3vh 0;
 }
 
 
